@@ -1,9 +1,9 @@
 # User Configuration Variables
 OUTPUT_DIR : test
-EMAIL : myusername@domain.com
-API_KEY :
+EMAIL : stef.rodop94@gmai.com 
+API_KEY : 4c5c4cd379cbeae960008ef0b1c75a17de09
 FORCE_PAUSE_SECONDS : 1
-DATABASE : test.sqlite
+DATABASE : gut_test_db.sqlite
 
 # NCBI Tables to Query
 TABLES :
@@ -16,12 +16,12 @@ TABLES :
 
 # Query Terms to Use
 SEARCH_TERMS :
-  - Assembly : (SAMN12991206[BioSample])
-  - BioProject : (PRJNA269675[BioProject IDs and Accessions])
-  - BioSample: (SAMN12991206[Accession])
-  - SRA : (SAMN12991206[BioSample])
-  - Nucleotide : (SAMN12991206[BioSample])
-  - Pubmed : (26634751[uid])
+  - Assembly : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - BioProject : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - BioSample: ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - SRA : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - Nucleotide : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - Pubmed : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
 
 # Columns of the database (ie. metadata fields to retrieve)
 TABLE_COLUMNS :

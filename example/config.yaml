@@ -1,27 +1,23 @@
 # User Configuration Variables
 OUTPUT_DIR : example
-EMAIL : myusername@domain.com
-API_KEY :
-FORCE_PAUSE_SECONDS : 1
-DATABASE : yersinia_pestis_db.sqlite
+EMAIL : stef.rodop94@gmail.com
+API_KEY : 4c5c4cd379cbeae960008ef0b1c75a17de09
+FORCE_PAUSE_SECONDS : 1.5
+DATABASE : gut_test_db.sqlite
 
 # NCBI Tables to Query
 TABLES :
-  - Assembly
-  - BioSample
-  - BioProject
-  - SRA
   - Nucleotide
-  - Pubmed
+  
 
 # Query Terms to Use
 SEARCH_TERMS :
-  - Assembly : (Yersinia pestis[Organism]) AND (2019[Date - Sequences Release]:2020[Date - Sequences Release])
-  - BioProject : (Yersinia pestis[Organism]) AND (bioproject assembly[Filter] OR bioproject sra[Filter]) AND (2019[Registration Date]:2020[Registration Date])
-  - BioSample: (Yersinia pestis[Organism]) AND (biosample assembly[Filter] OR biosample sra[Filter]) AND (2019[Publication Date]:2020[Publication Date])
-  - SRA : ((Yersinia pestis[Organism]) AND (genome OR genomes OR genomic OR genomics) NOT transcriptomic[Source]) AND (2019[Publication Date]:2020[Publication Date])
-  - Nucleotide : (Yersinia pestis[Organism]) AND WGS_MASTER[KYWD] AND nucleotide assembly[Filter] AND (2019[Publication Date]:2020[Publication Date])
-  - Pubmed : (Yersinia pestis) AND (pubmed assembly[Filter] OR pubmed sra[Filter]) AND (2019[Date - Create]:2020[Date - Create])
+  - Assembly : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - BioProject : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - BioSample: ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - SRA : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - Nucleotide : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - Pubmed : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
 
 # Columns of the database (ie. metadata fields to retrieve)
 TABLE_COLUMNS :
