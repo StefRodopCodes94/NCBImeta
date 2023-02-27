@@ -7,16 +7,18 @@ DATABASE : gut_test_db.sqlite
 
 # NCBI Tables to Query
 TABLES :
-  - Nucleotide
+ # - Nucleotide
+ # - BioProject
+  - BioSample
   
 
 # Query Terms to Use
 SEARCH_TERMS :
   - Assembly : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
-  - BioProject : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
-  - BioSample: ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - BioProject : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND Shotgun[All Fields]
+  - BioSample: ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND Shotgun[All Fields]
   - SRA : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
-  - Nucleotide : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
+  - Nucleotide : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND Shotgun[All Fields]
   - Pubmed : ("gut metagenome"[Organism] OR Gut Microbiome[All Fields]) AND ("Homo sapiens"[Organism] OR Human[All Fields]) AND shotgun[All Fields]
 
 # Columns of the database (ie. metadata fields to retrieve)
